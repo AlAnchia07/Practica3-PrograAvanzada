@@ -1,9 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.37301.10 d17.14
+# Visual Studio Version 18
+VisualStudioVersion = 18.12.12405.243 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica3", "Practica3\Practica3.csproj", "{45F5FE08-8CA1-4EEB-A526-6BD2DB1EBF13}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{832F7E35-6F42-495B-8702-8AE040023621}"
+	ProjectSection(SolutionItems) = preProject
+		ClienteRepository.cs = ClienteRepository.cs
+		OrdenServicioRepository.cs = OrdenServicioRepository.cs
+		TipoServicioRepository.cs = TipoServicioRepository.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", "{E8591355-1BE5-44E1-A1CF-CA5545527131}"
+	ProjectSection(SolutionItems) = preProject
+		IClienteRepository.cs = IClienteRepository.cs
+		IOrdenServicioRepository.cs = IOrdenServicioRepository.cs
+		ITipoServicioRepository.cs = ITipoServicioRepository.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +32,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E8591355-1BE5-44E1-A1CF-CA5545527131} = {832F7E35-6F42-495B-8702-8AE040023621}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C62D6A0A-7C14-4AD1-A968-CACB1D00F77B}
